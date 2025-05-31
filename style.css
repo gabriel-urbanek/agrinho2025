@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Rakkas&display=swap');
+
+/* Variáveis */
+:root {
+    --primary-color: #026773;
+    --secondary-color: #3CA6A6;
+    --text-color: #024959;
+    --background-color: #F2E3D5;
+    --button-hover: #012E40;
+    --font-body: "Chocolate Classical Sans", serif;
+    --font-titulo: "Rakkas", serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+/* Corpo da página */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #0c6474;  /* Cor de fundo para o cabeçalho */
+    padding: 20px;
+    color: white;                /* Cor do texto, para que contraste bem com o fundo */
+}
+
+h1 {
+    text-align: center;           /* Centraliza o título */
+    font-family: var(--font-titulo);
+    margin-top: 20px;
+}
+
+/* Estilo do título das seções */
+h2 {
+    background-color: #0c6474;   /* Cor de fundo para os títulos das seções */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Centralizar o botão */
+.cta-container {
+    display: flex;                  /* Define como um contêiner flexível */
+    justify-content: center;        /* Centraliza horizontalmente o conteúdo */
+    align-items: center;            /* Centraliza verticalmente o conteúdo */
+    margin-top: 30px;                /* Espaço acima do contêiner */
+}
+
+/* Estilos para o botão */
+.cta-button {
+    background-color: var(--secondary-color); /* Cor de fundo para o botão */
+    color: white;                    /* Cor do texto do botão */
+    padding: 15px 30px;              /* Espaciamento interno (tamanho do botão) */
+    text-align: center;              /* Garante que o texto do botão esteja centralizado */
+    text-decoration: none;           /* Remove o sublinhado */
+    border-radius: 5px;              /* Bordas arredondadas */
+    font-family: var(--font-titulo); /* Usa a mesma fonte do título */
+    font-size: 1.2rem;               /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Efeito suave para a cor de fundo */
+}
+
+/* Efeito de hover (passando o mouse sobre o botão) */
+.cta-button:hover {
+    background-color: var(--button-hover); /* Altera a cor do fundo ao passar o mouse */
+}
+
+/* Estilos para o conteúdo das seções */
+.conteudo {
+    padding: 20px;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style-type: none;  /* Remove os marcadores de lista */
+    padding: 0;
+    text-align: center;     /* Centraliza os itens de navegação */
+    margin-top: 20px;       /* Adiciona espaçamento superior */
+}
+
+nav ul li {
+    display: inline-block;  /* Faz com que os itens de lista fiquem em linha (horizontal) */
+    margin-right: 20px;     /* Espaço entre os itens */
+}
+
+nav ul li a {
+    background-color: var(--secondary-color); /* Cor de fundo para os links */
+    color: white;                    /* Cor do texto */
+    padding: 10px 20px;              /* Espaçamento interno */
+    text-align: center;              /* Garante que o texto do link esteja centralizado */
+    text-decoration: none;           /* Remove o sublinhado */
+    border-radius: 5px;              /* Bordas arredondadas */
+    font-family: var(--font-titulo); /* Usa a mesma fonte do título */
+    font-size: 1rem;                 /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Efeito suave para a cor de fundo */
+}
+
+/* Efeito de hover (passando o mouse sobre o link) */
+nav ul li a:hover {
+    background-color: var(--button-hover); /* Cor do fundo ao passar o mouse */
+}
+
+/* Estilo para os parágrafos */
+p {
+    margin-top: 20px;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 20%;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
